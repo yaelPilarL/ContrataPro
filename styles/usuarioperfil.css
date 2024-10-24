@@ -168,13 +168,23 @@ button {
   align-items: center;
   gap: 2rem;
 }
-.boton {
+.boton {  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
  color: black;
  font-family: sans-serif;
  font-size: 25px;
   width: 80%;
-  height: 100px;
+  height: 200px;
   border: 1px solid black;
+}
+.botonletra{
+
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 25px;
 }
 .info{
   background-image: url(../assets/pexels-sora-shimazaki-5926250-removebg-preview.png);
@@ -276,4 +286,8 @@ button {
   align-items: center; 
   padding: 15px 5px;
   font-size: small;
+}
+.flecha{
+  padding: 20px;
+  width: 110px;
 }
