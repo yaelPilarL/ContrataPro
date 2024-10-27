@@ -168,66 +168,60 @@ button {
   align-items: center;
   gap: 2rem;
 }
-.boton {  display: flex;
+.boton{
+  display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
- color: black;
- font-family: sans-serif;
- font-size: 25px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 25px;
   width: 80%;
   height: 200px;
   border: 1px solid black;
 }
-.botonletra{
-
+.botonletra {
   text-decoration: none;
   color: black;
   font-family: sans-serif;
   font-size: 25px;
 }
-.info{
-  background-image: url(../assets/pexels-sora-shimazaki-5926250-removebg-preview.png);
-  background-position:center ;
-  background-size:cover;
-  background-repeat: no-repeat;
+.info {
+  background: url(../assets/pexels-sora-shimazaki-5926250-removebg-preview.png)
+    center / cover no-repeat;
 }
-.datos{
-  background-image: url(../assets/pexels-n-voitkevich-8062357-removebg-preview.png);
-  background-position:center ;
-  background-size:cover;
-  background-repeat: no-repeat;
+.datos {
+  background: url(../assets/pexels-n-voitkevich-8062357-removebg-preview.png)
+    center / cover no-repeat;
 }
-.tarje{
-  background-image: url(../assets/pexels-goumbik-915915-removebg-preview.png);
-  background-position:center ;
-  background-size:cover;
-  background-repeat: no-repeat;
+.tarje {
+  background: url(../assets/pexels-goumbik-915915-removebg-preview.png) center /
+    cover no-repeat;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 
-.footer{
+.footer {
   background-color: #88bad6;
   padding: 40px 0;
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.link{
+.link {
   width: 25%;
   padding: 0 15px;
 }
 
-.link h4{
-  font-size: 1.2rem; 
+.link h4 {
+  font-size: 1.2rem;
   color: black;
   margin-bottom: 20px;
   font-weight: 500;
@@ -236,10 +230,10 @@ button {
   display: inline-block;
 }
 
-.link ul li a{
+.link ul li a {
   font-size: 1 rem;
   text-decoration: none;
-  color: black ;
+  color: black;
   display: block;
   margin-bottom: 15px;
   transition: color 0.3s ease, padding-left 0.3s ease;
@@ -250,7 +244,7 @@ button {
   padding-left: 6px;
 }
 
-.redes a{
+.redes a {
   display: inline-block;
   min-width: 40px;
   background-color: #154162;
@@ -259,51 +253,49 @@ button {
   line-height: 40px;
   border-radius: 50%;
   color: beige;
-  transition: all .5s ease ;
+  transition: all 0.5s ease;
 }
-
-.redes a:hover{
+.redes a:hover {
   background-color: black;
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .link h4 {
-      font-size: 1rem;
+    font-size: 1rem;
   }
-
   .link ul li a {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
-
 .politicas {
   color: beige;
-  background-color: #0f324b ;
+  background-color: #0f324b;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   padding: 15px 5px;
   font-size: small;
 }
-.flecha{
+.flecha {
   padding: 20px;
   width: 110px;
 }
-.contenidoinfo{
+.contenidoinfo {
   width: 80%;
   height: 200px;
-  background-color: #FFE45E;
+  background-color: #ffe45e;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 3rem;
   align-items: center;
   justify-content: space-evenly;
 }
-.info1{
+.info1 {
   display: flex;
-    align-items: center; 
-    gap: 10px
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 3rem;
 }
