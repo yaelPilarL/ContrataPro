@@ -31,23 +31,23 @@
                         </span>
                     </a>
                     <a href=""><span class="box">
-                       Favoritos
+                    Favoritos
                     </span></a>
                     <a href=""><span class="box">
-                       Perfil
+                    Perfil
                     </span></a>
                     <i class="fa-solid fa-bell"id="icon" style="font-size: 30px; color: black; cursor: pointer; padding-top: 10px; padding: 10px;"></i>
                 <script>
-                  const icon = document.getElementById('icon');
-                  
-                  icon.addEventListener('click', function() {
+                const icon = document.getElementById('icon');
+                
+                icon.addEventListener('click', function() {
                     // Si el color es negro, lo cambia a rojo, y viceversa.
                     if (icon.style.color === 'black') {
-                      icon.style.color = 'yellow';
+                    icon.style.color = 'yellow';
                     } else {
-                      icon.style.color = 'black';
+                    icon.style.color = 'black';
                     }
-                  });
+                });
                 </script>
                 </nav>
                 </ul>
@@ -60,8 +60,13 @@
                 <h4>Nombre de Usuario</h4>
             </div>
             <section class="menuprincipal">
-                <button class="boton info">Informacion Personal</button>
-                <button class="boton datos">Datos de la cuenta</button>
+                <a class="boton info" href="./usuinformacionpersonal.html">
+                    <button class="botonletra">Informacion Personal</button>
+                </a>
+                <a class="boton info" href="./perfildatosdecuenta.html" >
+
+                    <button class="boton datos">Datos de la cuenta</button>
+                </a>
                 <button class="boton tarje">Tarjetas</button>
             </section>
 
