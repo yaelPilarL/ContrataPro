@@ -295,7 +295,18 @@ button {
   align-items: center;
   justify-content: space-evenly;
 }
-.info1 {
+.contenidocuenta{
+  width: 80%;
+  height: 200px;
+  background-color: #5AA9E6;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.info1 , .cuenta1{
   display: flex;
   align-items: center;
   justify-content: space-between;
