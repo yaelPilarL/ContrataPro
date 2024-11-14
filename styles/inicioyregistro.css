@@ -134,6 +134,7 @@ main{
     color: white;
     cursor: pointer;
     outline: none;
+    width: 250px;
 }
 .contenedor_login_registro form button:hover {
     background: white;
