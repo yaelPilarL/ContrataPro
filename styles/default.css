@@ -82,7 +82,7 @@ header{
     display: flex;
      /* Espaciado entre los elementos del menú */
   }
-  
+
   .navbar a {
     text-decoration: none;
     color: rgb(0, 0, 0);
