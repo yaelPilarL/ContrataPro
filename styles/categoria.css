@@ -10,7 +10,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.644);
 }
 /* Logo y animación */
 .logo-container {
@@ -33,6 +32,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.5s ease;
+  background-color: transparent;
 }
 
 .logo-split {
@@ -95,7 +95,6 @@
   overflow: hidden;
   padding: 15px;
   text-align: center;
-  background: transparent;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -144,70 +143,104 @@
   transform: translateX(0);
   transition: 0.2s transform linear, 0.2s height linear 0.2s;
 }
-button {
-  color: #dd2d4a;
-  text-decoration: none;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  background: transparent;
-}
-.infoperfil {
-  width: 98%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 0.5rem;
-}
-.menuprincipal {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-.boton{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  font-family: sans-serif;
-  font-size: 25px;
-  width: 80%;
-  height: 200px;
-  border: 1px solid black;
-}
-.botonletra {
-  text-decoration: none;
-  color: black;
-  font-family: sans-serif;
-  font-size: 25px;
-}
-.info {
-  background: url(../assets/pexels-sora-shimazaki-5926250-removebg-preview.png)
-    center / cover no-repeat;
-}
-.cuenta{
-  background: url(../assets/pexels-n-voitkevich-8062357-removebg-preview.png) center / cover no-repeat;
-}
-.datos {
-  background: url(../assets/pexels-n-voitkevich-8062357-removebg-preview.png)
-    center / cover no-repeat;
-}
-.tarje {
-  background: url(../assets/pexels-goumbik-915915-removebg-preview.png) center /
-    cover no-repeat;
-}
-
+/*main*/
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: flex;
+  padding: 20px;
 }
 
+.filters {
+  width: 200px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.filters h3,
+.filters h4 {
+  margin-bottom: 10px;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.workers {
+  flex: 1;
+}
+
+.workers h2 {
+  margin-bottom: 20px;
+}
+
+.worker-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.worker-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.worker-info {
+  flex: 2;
+}
+
+.worker-info h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.worker-info p {
+  margin-bottom: 5px;
+}
+
+.worker-price {
+  text-align: right;
+}
+
+.worker-price p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.worker-price button {
+  display: block;
+  width: 100px;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.worker-price button:first-child {
+  background-color: #4da6ff;
+  color: white;
+}
+
+.worker-price button:last-child {
+  background-color: #ff6666;
+  color: white;
+}
 .footer {
   background-color: #88bad6;
   padding: 40px 0;
@@ -279,47 +312,4 @@ button {
   align-items: center;
   padding: 15px 5px;
   font-size: small;
-}
-.flecha {
-  padding: 20px;
-  width: 110px;
-}
-.contenidoinfo {
-  width: 80%;
-  height: 200px;
-  background-color: #ffe45e;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.contenidocuenta{
-  width: 80%;
-  height: 200px;
-  background-color: #5AA9E6;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.contenidotarje{
-  width: 80%;
-  height: 200px;
-  background-color: #FF6392;
-  border: 1px solid black;
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.info1 , .cuenta1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  gap: 3rem;
 }
