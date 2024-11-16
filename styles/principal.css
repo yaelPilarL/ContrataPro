@@ -1,16 +1,14 @@
 div #search-container {
-    align-items: center;
     padding: 1%;
-    width: 30%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 #buscador{
-    margin-top: 2rem;
-    margin-left: 27%;
+    margin: 2rem;
     width: 50%;
-    max-width: 700px;
+    margin-left: 25%;
     background-color: #cee0ef;
     display: flex;
     align-items: center;
@@ -57,7 +55,7 @@ h2, .h4func,
 }
 
 .h2{
-    margin-top: 3.5rem;
+    margin-top: 2rem;
 }
 
 #pcat{
@@ -69,8 +67,6 @@ h2, .h4func,
 }
 
 #categorias{
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(8, auto);
     gap: 1.5rem;
@@ -87,7 +83,7 @@ h2, .h4func,
 @media (max-width: 400px) {
     .grid-container {
         grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
-/* }     } */
+/* }     } */ 
 
 .cardcate{
     width: 100px;
@@ -119,6 +115,10 @@ a {
 }
 
 /* CÓMO FUNCIONA */
+
+#comofunciona{
+    margin-top: 2rem;
+}
 .carruseluser , #carruselprof{
     background-color: transparent;
     max-width: 350px;
