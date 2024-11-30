@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContrataPro</title>
-    <link rel="stylesheet" href="styles/default.css"> 
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
@@ -13,7 +12,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/default.css">
     <link rel="stylesheet" href="../styles/default.css">
     <link rel="stylesheet" href="../styles/principal.css">
     <script src="../scripts/index.js"></script>
@@ -301,62 +299,63 @@
   
 
 <!-- CÓMO FUNCIONA -->
-    <h2 id="comofunciona">¿Cómo funciona?</h2>
-    <h4 class="h4func">¡Encontrá el servicio que deseas en 3 simples pasos!</h4>
-    
-    <!-- CONTRATANTE -->
-    <section class="carruseluser">
-        <div class="slider-wraper">
-            <div class="slider">
-                <div>
-                    <img id="slider1us" src="../assets/paso 1.png" alt="Imagen 1">
-                    <p class="pasos">Paso 1: Crea tu cuenta</p>
-                </div>
-                <div>
-                    <img id="slider2us" src="../assets/paso 2.png" alt="Imagen 2">
-                    <p class="pasos" >Paso 2: Selecciona el servicio que deseas contratar</p>
-                </div>
-                <div>
-                    <img id="slider3us" src="../assets/paso 3.png" alt="Imagen 3">
-                    <p class="pasos" >Paso 3: ¡Contrata!</p>
-                </div>   
-            </div>
-            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
-            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
-        </div>
-    </section>
+<h2 id="comofunciona">¿Cómo funciona?</h2>
+<h4 class="h4func">¡Encontrá el servicio que deseas en 3 simples pasos!</h4>
 
-    <!-- PROFESIONAL -->
-    <div id="centrarcontent">
-        <button id="func-profesional" onclick="mostrar()" >
-            ¡Soy profesional!
-        </button>
+<!-- CONTRATANTE -->
+<section class="carruseluser">
+    <div class="slider-wraper">
+        <div class="slider">
+            <div>
+                <img id="slider1us" src="../assets/paso 1 us.png" alt="Imagen 1">
+                <p class="pasos">Paso 1: Crea tu cuenta</p>
+            </div>
+            <div>
+                <img id="slider2us" src="../assets/paso 2 us.png" alt="Imagen 2">
+                <p class="pasos" >Paso 2: Selecciona el servicio que deseas contratar</p>
+            </div>
+            <div>
+                <img id="slider3us" src="../assets/paso 3 us.png" alt="Imagen 3">
+                <p class="pasos" >Paso 3: ¡Contrata!</p>
+            </div>   
+        </div>
+        <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
     </div>
+</section>
 
-    <section id="carruselprof">
-        <h4 class="h4func">¡Postulá tu trabajo en 3 simples pasos!</h4>
-        <div class="slider-wraper">
-            <div class="sliderprof">
-                <div>
-                    <img id="slider1prof" src="../assets/paso 1.png" alt="Imagen 1">
-                    <p class="pasos">Paso 1: Crea tu cuenta</p>
-                </div>
-                <div>
-                    <img id="slider2prof" src="../assets/paso 2.png" alt="Imagen 2">
-                    <p class="pasos" >Paso 2: Postula tu trabajo</p>
-                </div>
-                <div>
-                    <img id="slider3prof" src="../assets/paso 3.png" alt="Imagen 3">
-                    <p class="pasos" >Paso 3: Confirma o cancela tus solicitudes</p>
-                </div>   
+<!-- PROFESIONAL -->
+<div class="centrarcontent">
+    <button id="func-profesional" onclick="mostrar()" >
+        ¡Soy profesional!
+    </button>
+</div>
+
+<section id="carruselprof">
+    <h4 class="h4func">¡Postulá tu trabajo en 3 simples pasos!</h4>
+    <div class="slider-wraper-prof">
+        <div class="sliderprof">
+            <div>
+                <img id="slider1prof" src="../assets/paso 1 profe.png" alt="Imagen 1">
+                <p class="pasos">Paso 1: Crea tu cuenta</p>
             </div>
-            <button class="prev" onclick="cambiarImg(-1)">&#10094;</button>
-            <button class="next" onclick="cambiarImg(1)">&#10095;</button>
+            <div>
+                <img id="slider2prof" src="../assets/paso 2 profe.png" alt="Imagen 2">
+                <p class="pasos" >Paso 2: Postula tu trabajo</p>
+            </div>
+            <div>
+                <img id="slider3prof" src="../assets/paso 3 profe.png" alt="Imagen 3">
+                <p class="pasos" >Paso 3: Confirma o cancela tus solicitudes</p>
+            </div>   
         </div>
-    </section>
-    <br><br><br><br><br>
+        <button class="prevprof" onclick="cambiarImg(-1)">&#10094;</button>
+        <button class="nextprof" onclick="cambiarImg(1)">&#10095;</button>
+    </div>
+</section>
+<br><br><br><br><br>
 </main>
-    <!-- Pie de pagina -->
+
+<!-- Pie de pagina -->
     <footer class="footer" id="contacto">
         <div class="container">
             <div class="footer-row">

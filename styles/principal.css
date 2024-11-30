@@ -52,10 +52,12 @@ div #search-container {
 h2, .h4func,
 #pcat{
     text-align: center;
+    font-size: larger;
 }
 
 .h2{
     margin-top: 2rem;
+    font-size: x-large;
 }
 
 #pcat{
@@ -64,6 +66,8 @@ h2, .h4func,
 
 .h4func{
     margin-top: 1.5rem;
+    margin-bottom: 1em;
+    font-size: larger;
 }
 
 #categorias{
@@ -73,17 +77,6 @@ h2, .h4func,
     box-sizing: border-box;
     justify-content: center
 }
-
-/* @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
-    /* }
-}
-
-@media (max-width: 400px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
-/* }     } */ 
 
 .cardcate{
     width: 100px;
@@ -115,19 +108,21 @@ a {
 }
 
 /* CÓMO FUNCIONA */
-
 #comofunciona{
-    margin-top: 2rem;
+    margin-top: 5%;
+    font-size: x-large;
 }
 .carruseluser , #carruselprof{
     background-color: transparent;
-    max-width: 350px;
-    margin-left: 38%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
-.slider-wraper{
+
+.slider-wraper , .slider-wraper-prof{
     position: relative;
-    max-width: 1000px;
+    width: 700px;
 }
 
 .slider, .sliderprof{
@@ -143,10 +138,13 @@ a {
     border: 0.5px #7199B7 solid;
     border-radius: 2%;
     box-shadow: 0 .15rem .5rem #154162;
+    width: 95%;
+    height: auto;
 }
 
 .pasos{
     text-align: center;
+    font-size: larger;
 }
 
 .slider-nav{
@@ -181,6 +179,14 @@ section button {
     right: 10px;
 }
 
+.prevprof{
+    left: 10px;
+}
+
+.nextprof {
+    right: 10px;
+}
+
 /* CÓMO FUNCIONA - PROFESIONAL */
 #func-profesional{
     background-color: #FFE45E;
@@ -191,16 +197,8 @@ section button {
     font-size: medium;
 }
 
-#centrarcontent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
-}
 
-#carruselprof{
-    display: none;
-}
+
 
 /* .slider-nav a{
     width: .5rem;

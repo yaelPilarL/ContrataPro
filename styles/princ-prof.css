@@ -13,6 +13,8 @@ div h2{
 #contenedor{
     width: 65%;
     height: 80%;
+    padding-bottom: 60px;
+    padding-left: 50px;
 }
 
 #totalpostulaciones{
