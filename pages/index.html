@@ -20,46 +20,57 @@
 </head>
 <body>
     <!-- Cabecera --> 
-    <header> <!--  -->
+    <header>
         <video autoplay muted loop>
-            <source src="../assets/Collageprofesiones.mp4">
-        </video> 
-    </header>
-    <!-- Navegacion -->
-    <div class="menu">
-        <div class="logo-container">
-            <!-- Aquí está la animación del logo -->
-            <a href="./index.html"><!--  -->
-            <div class="button-container">
-                <button class="home-button">Home</button>
-                <div class="logo-split">
-                    <img src="../assets/Logo sin fondo izquierda - copia.png" alt="Tuerca" class="logo-part logo-left">
-                    <img src="../assets/Logo sin fondo - derecha - copia.png" alt="Foco" class="logo-part logo-right">
-                </div>
-            </a>
+            <!-- Add your video source here -->
+            <source src="../assets/Collageprofesiones.mp4" type="video/mp4">
+        </video>
+  
+        <div class="header-content">
+            <img src="../assets/icono_contrata_pro-removebg-preview.png" alt="" srcset="">
+            <h1 id="contratapro" class="brand-name">ContrataPro</h1>
+            <div class="scroll-indicator">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
             </div>
         </div>
-        
-        <nav class="navbar">
-            <ul>
-                    <a href=#comofunciona><span class="box">
-                        ¿Como funciona?
-                    </span>
-                    </a> 
-                    <a href="./Inicio de sesión y registro.html">
-                <span class="box">
-                        Iniciar sesion
-                    </span></a>
-                <a href="#contacto"><span class="box">
-                    Contacto
-                </span></a>
-            </nav>
-            </ul>
-        </nav>
-    </div>
-<!-- Contenido principal --> 
-
+    </header>
+    <!-- Navegacion -->
+    <!-- Contenido principal --> 
+    
     <main>
+        <div class="menu">
+            <div class="logo-container">
+                <!-- Aquí está la animación del logo -->
+                <a href="./index.html"><!--  -->
+                <div class="button-container">
+                    <button class="home-button">Home</button>
+                    <div class="logo-split">
+                        <img src="../assets/Logo sin fondo izquierda - copia.png" alt="Tuerca" class="logo-part logo-left">
+                        <img src="../assets/Logo sin fondo - derecha - copia.png" alt="Foco" class="logo-part logo-right">
+                    </div>
+                </a>
+                </div>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                        <a href=#comofunciona><span class="box">
+                            ¿Como funciona?
+                        </span>
+                        </a> 
+                        <a href="./Inicio de sesión y registro.html">
+                    <span class="box">
+                            Iniciar sesion
+                        </span></a>
+                    <a href="#contacto"><span class="box">
+                        Contacto
+                    </span></a>
+                </nav>
+                </ul>
+            </nav>
+        </div>
         <h2 class="h2">¡Conocé nuestras categorias!</h2>
         <p id="pcat">Encontra al profesional que necesitas<p>
 
@@ -287,10 +298,9 @@
                 </a>
             </article>    
         </section>
-    </main>
+  
 
 <!-- CÓMO FUNCIONA -->
- <h3>pruebaaaaaaa</h3>
     <h2 id="comofunciona">¿Cómo funciona?</h2>
     <h4 class="h4func">¡Encontrá el servicio que deseas en 3 simples pasos!</h4>
     
@@ -323,7 +333,6 @@
         </button>
     </div>
 
-
     <section id="carruselprof">
         <h4 class="h4func">¡Postulá tu trabajo en 3 simples pasos!</h4>
         <div class="slider-wraper">
@@ -345,12 +354,8 @@
             <button class="next" onclick="cambiarImg(1)">&#10095;</button>
         </div>
     </section>
-    
-
-
-
-    
     <br><br><br><br><br>
+</main>
     <!-- Pie de pagina -->
     <footer class="footer" id="contacto">
         <div class="container">
@@ -398,8 +403,6 @@
     <div class="politicas">
         <p>©2024 Todos los derechos reservados</p>
     </div>
-
-
-
+<script src="../scripts/paralax.js"></script>
 </body>
 </html>
