@@ -1,104 +1,11 @@
-/* ENCABEZADO VIDEO  */
-header {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ .menu{
 
-header video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-}
-
-
-/* Header content styles */
-.header-content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
-  color: white;
-  width: 100%;
-}
-
-.brand-name {
-  color: black;
-  font-size: 4rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Scroll indicator styles */
-.scroll-indicator {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.chevron {
-  color: black;
-  position: relative;
-  width: 188px;
-  height: 20px;
-  opacity: 0;
-  transform: scale(0.3);
-  animation: move-chevron 3s ease-out infinite;
-}
-
-.chevron:first-child {
-  animation: move-chevron 3s ease-out 1s infinite;
-}
-
-.chevron:nth-child(2) {
-  animation: move-chevron 3s ease-out 2s infinite;
-}
-
-.chevron:before,
-.chevron:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  background: #000000;
-}
-
-.chevron:before {
-  left: 0;
-  transform: skewY(30deg);
-}
-
-.chevron:after {
-  right: 0;
-  width: 50%;
-  transform: skewY(-30deg);
-}
-
-@keyframes move-chevron {
-  25% {
-      opacity: 1;
-      transform: translateY(9px) scale(0.3);
-  }
-  75% {
-      opacity: 1;
-      transform: translateY(15px) scale(0.3);
-  }
-  100% {
-      opacity: 0;
-      transform: translateY(21px) scale(0.3);
-  }
-}
-main{
-  background-color: aliceblue;
-}
-  .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,8 +36,9 @@ main{
   }
   
   .logo-split {
+    margin-top: 20px;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -166,7 +74,7 @@ main{
     opacity: 1;
   }
   
-  /* Navbar */
+ /* Navbar */
   .navbar ul {
     list-style: none;
     display: flex;
@@ -256,6 +164,125 @@ main{
     padding: 0;
     box-sizing: border-box; 
 }
-
-
+/*Main*/
+.container {
+    padding-top: 25px;
+    display: flex;
+    height: 100vh;
+  }
   
+  .sidebar {
+    flex: 0 0 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .category-dropdown select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .filter-options,
+  .radio-options {
+    margin-top: 20px;
+  }
+  
+  .filter-item,
+  .radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filter-item input,
+  .radio-item input {
+    margin-right: 5px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .job-listing {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .job-listing h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .job-listing button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  /*FOOTER*/
+  
+
+
+
+  /*MAIN FAVORITOS*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin: 15px;
+  }
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .info {
+    flex-grow: 1;
+  }
+  .info h3 {
+    margin: 0;
+  }
+  .info p {
+    margin: 5px 0 0 0;
+  }
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .actions button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .actions button.delete {
+    background-color: #f44336;
+  }
+  .favo{
+    text-align: center;
+  }
