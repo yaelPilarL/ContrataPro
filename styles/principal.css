@@ -90,12 +90,6 @@ main{
 /* From Uiverse.io by SteveBloX */ 
 .card {
     box-sizing: border-box;
-    justify-content: center
-}
-
-.cardcate{
-    width: 100px;
-    overflow: hidden;
     width: 140px;
     height: 174px;
     background: rgba(217, 217, 217, 0.58);
@@ -110,9 +104,9 @@ main{
     user-select: none;
     font-weight: bolder;
     color: black;
-  }
+}
   
-  .card:hover {
+.card:hover {
     border: 1px solid black;
     transform: scale(1.05);
   }
