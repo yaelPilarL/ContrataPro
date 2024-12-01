@@ -214,6 +214,13 @@ section button {
     right: 10px;
 }
 
+/* BOTON SOY PROFESIONAL */
+.centrarcontent{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
 /* CÓMO FUNCIONA - PROFESIONAL */
 #func-profesional{
     background-color: #FFE45E;
