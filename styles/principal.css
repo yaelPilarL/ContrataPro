@@ -87,20 +87,12 @@ main{
 .h4c{color: black;}
 .card {
     box-sizing: border-box;
-<<<<<<< HEAD
     justify-content: center
 }
 
 .cardcate{
     width: 100px;
     overflow: hidden;
-=======
-    width: 150px;
-    height: 130px;
-    background: rgba(138, 137, 137, 0.192);
-    border: 1px solid rgba(97, 93, 93, 0.39);
-    border-radius: 17px;
->>>>>>> 8684e05131d6349c0f8266d2ed04e32049db243c
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
