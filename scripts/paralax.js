@@ -26,11 +26,12 @@ function cambiarImagen(direccion) {
 // Inicializa el carrusel mostrando la primera imagen
 mostrarImagen();
 
+
 //BOTÓN SOY PROFESIONAL
 function mostrar(){
     var container = document.getElementById("carruselprof");
 
-    if(container.style.display == "block"){
+    if(container.style.display == ("block"|| "flex") ){
         container.style.display = "none";
     }
     else{
@@ -43,7 +44,7 @@ function mostrar(){
 let ind = 0;
 
 function mostrarImg() {
-    const imagenes = document.querySelectorAll('.carruselprof .slider-wraper-prof .sliderprof div');
+    const imagenes = document.querySelectorAll('#carruselprof .slider-wraper-prof .sliderprof div');
     imagenes.forEach((div, i) => {
         div.style.display = 'none';
     });
@@ -51,7 +52,7 @@ function mostrarImg() {
 }
 
 function cambiarImg(direcc) {
-    const imagenes = document.querySelectorAll('.carruselprof .slider-wraper-prof .sliderprof div');
+    const imagenes = document.querySelectorAll('#carruselprof .slider-wraper-prof .sliderprof div');
     ind += direcc;
 
     if (ind >= imagenes.length) {
