@@ -71,9 +71,11 @@ h2, .h4func,
 }
 
 #categorias{
-    background-color: white;
+ margin-left: 60px;
+background-color: white;
 width: 90%;
-padding-left:  80px;
+padding-left:80px;
+padding: right 80px;
 gap: 1rem;
 display: flex;
 flex-wrap: wrap;
@@ -85,6 +87,7 @@ main{
     background-color: white;
 }
 .h4c{color: black;}
+/* From Uiverse.io by SteveBloX */ 
 .card {
     box-sizing: border-box;
     justify-content: center
@@ -93,6 +96,11 @@ main{
 .cardcate{
     width: 100px;
     overflow: hidden;
+    width: 140px;
+    height: 174px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    border-radius: 17px;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
