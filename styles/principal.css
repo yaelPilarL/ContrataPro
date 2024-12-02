@@ -105,7 +105,6 @@ main{
     font-weight: bolder;
     color: black;
 }
-
 .card:hover {
     border: 1px solid black;
     transform: scale(1.05);
@@ -122,23 +121,28 @@ a {
     gap: 1.5rem;
 }
 
-
 #imagen{
     height: 80px;
     object-fit: contain;
 }
+
 
 /* CÓMO FUNCIONA */
 #comofunciona{
     margin-top: 5%;
     font-size: x-large;
 }
-.carruseluser , #carruselprof{
+.carruseluser {
     background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
+}
 
+#carruselprof {
+    background-color: transparent;
+    width: 100%;
+    display: none;
 }
 
 .slider-wraper , .slider-wraper-prof{
@@ -161,6 +165,7 @@ a {
     box-shadow: 0 .15rem .5rem #154162;
     width: 95%;
     height: auto;
+    
 }
 
 .pasos{
@@ -208,7 +213,13 @@ section button {
     right: 10px;
 }
 
-/* CÓMO FUNCIONA - PROFESIONAL */
+/* BOTON SOY PROFESIONAL */
+.centrarcontent{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
 #func-profesional{
     background-color: #FFE45E;
     padding: .5em;
