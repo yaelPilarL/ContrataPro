@@ -125,25 +125,34 @@ main{
     font-family: sans-serif;
 }
 
-.formulario_login button {
+.formulario_login input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
     width: 100%;
+    box-sizing: border-box;
 }
-.formulario_registro button{
-    width: 100%;
-}
-.contenedor_login_registro form button{
+
+.boton-estilizado {
+    display: inline-block;
     padding: 10px 40px;
     margin-top: 20px;
     border: none;
     font-size: 14px;
     background: #DD2D4A;
     color: white;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
     outline: none;
 }
-.contenedor_login_registro form button:hover {
+.boton-estilizado{
+    width: 100%;
+}
+
+.boton-estilizado:hover {
     background: white;
-    color:#DD2D4A
+    color: #DD2D4A;
 }
 
 .formulario_login{ 
