@@ -87,7 +87,7 @@ main{
     background-color: white;
 }
 .h4c{color: black;}
-/* From Uiverse.io by SteveBloX */ 
+
 .card {
     box-sizing: border-box;
     width: 140px;
@@ -104,14 +104,14 @@ main{
     user-select: none;
     font-weight: bolder;
     color: black;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     border: 1px solid black;
     transform: scale(1.05);
-  }
-  
-  .card:active {
+}
+
+.card:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
 a {
