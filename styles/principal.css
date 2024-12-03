@@ -7,8 +7,8 @@ div #search-container {
 
 #buscador{
     margin: 2rem;
-    width: 50%;
-    margin-left: 25%;
+    width: 65%;
+    margin-left: 20%;
     background-color: #cee0ef;
     display: flex;
     align-items: center;
@@ -49,19 +49,17 @@ div #search-container {
 }
 
 /* CATEGORIAS */
-h2, .h4func,
-#pcat{
-    text-align: center;
-    font-size: larger;
-}
 
 .h2{
+    text-align: center;
     margin-top: 2rem;
-    font-size: x-large;
+    font-size:45px;
 }
 
 #pcat{
-    margin-bottom: 2rem;
+    text-align: center;
+    font-size:20px;
+    font-weight:300;
 }
 
 .h4func{

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../styles/usuarioperfil.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../styles/usuarioperfil.css">
 </head>
 <body>
     <header>
         <div class="menu">
             <div class="logo-container">
                 <!-- Aquí está la animación del logo -->
-                <a href="./Paginaprincipalusuario.html"><!--  -->
+                <a href="./index.html"><!--  -->
                 <div class="button-container">
                     <button class="home-button">Home</button>
                     <div class="logo-split">
@@ -55,69 +54,77 @@
         </div>
     </header>
     <main>
-        <div class="infoperfil">
-            <img src="../assets/icons8-administrator-male-80.png" alt="" srcset="">
-                <h4>Nombre de Usuario</h4>
-            </div>
-            <section class="menuprincipal">
-                <a class="boton info" href="./usuinformacionpersonal.html">
-                    <button class="botonletra">Informacion Personal</button>
-                </a>
-                <a class="boton cuenta" href="./perfildatosdecuenta.html" >
-                    <button class="botonletra">Datos de la cuenta</button>
-                </a>
-                <a class="boton tarje" href="./perfiltarjetas.html">
-                    <button class="botonletra">Tarjetas</button>
-                </a>
-            </section>
-
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-row">
-                    <div class="link">
-                        <h4>ContrataPro</h4>
-                        <ul>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Misión y Visión</a></li>
-                            <li><a href="#">Impacto</a></li>
-                            <li><a href="#">Términos y condiciones</a></li>
-                            <li><a href="#">Privacidad</a></li>
-                        </ul>
-                    </div>
-                    <div class="link">
-                        <h4>Servicios</h4>
-                        <ul>
-                            <li><a href="#">Categorías</a></li>
-                            <li><a href="#">Contratación</a></li>
-                            <li><a href="#">Postulación</a></li>
-                            <li><a href="#">Métodos de Pago</a></li>
-                        </ul>
-                    </div>
-                    <div class="link">
-                        <h4>Contacto</h4>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-phone"></i> Centro de Ayuda</li></a>
-                            <li> <a href="https://www.google.com/maps?sca_esv=7e370cf0159e2ba3&rlz=1C1GCEA_enAR1020AR1020&output=search&q=educaci%C3%B3n+it&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgy3z6G8XHXm5Ah4uwilWjRO_f3ZpYjYhoafm-990aqxO1yt63WPyebJ_atHlAVvBaCQ5oSyUPfEV7Dp4HqoGVMs_t91WZYaM0bKrmjb709nxzedLeXiGya2ULkHhmDCrL1hUaGzpzkBm3TTtP6Jov3xrhMKF6Fu3Y9OsLEW-rmTgv6jw7NHHFmcDGgkiHScmBdkXTVw&entry=mc&ved=1t:200715&ictx=111" target="_blank"><i class="fas fa-map-marker-alt"></i> Lavalle 684, Ciudad de Buenos Aires, Argentina</li></a>
-                            <li><a href="#"><i class="fas fa-envelope"></i> ejemplo@email.com</li></a>
-                        </ul>
-                    </div>
-                    <div class="link">
-                        <h4>Redes Sociales</h4>
-                        <div class="redes">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-        <!-- Derechos de autor --> 
-        <div class="politicas">
-            <p>©2024 Todos los derechos reservados</p>
+    <div class="container">
+        <div class="profile-section">
+          <div class="profile-image-container">
+            <img src="image1.png" alt="Profile Image" class="profile-image">
+          </div>
+          <div class="profile-info">
+            <h2 class="username">Nombre de Usuario</h2>
+            <p class="membership-type">Miembro Premium</p>
         </div>
-        
-        </body>
+    </div>
+    <div class="personal-info-section">
+        <h2>Informacion Personal</h2>
+        <p>Gestiona tu informacion personal</p>
+        <div class="personal-info-item">
+            <h3 class="info-label">Nombre completo</h3>
+            <p class="info-value">Juan Pérez González</p>
+        </div>
+        <div class="personal-info-item">
+            <h3 class="info-label">Email</h3>
+            <p class="info-value">juan.perez@ejemplo.com</p>
+        </div>
+        <div class="personal-info-item">
+            <h3 class="info-label">Teléfono</h3>
+            <p class="info-value">+34 600 123 456</p>
+        </div>
+        <div class="personal-info-item">
+            <h3 class="info-label">Dirección</h3>
+            <p class="info-value">Calle Principal 123, Madrid</p>
+        </div>
+        <button class="add-payment-method"">Editar información</button>
+    </div>
+      </div>
+
+    <!-- Sección de datos de la cuenta -->
+    <div class="container">
+        <div class="account-data-section">
+          <h2 class="section-title">Datos de la cuenta</h2>
+          <div class="account-data-item">
+            <div class="account-details">
+              <h3 class="account-title">Visa terminada en 4242</h3>
+              <p class="account-expiration">Expira 12/25</p>
+            </div>
+            <button class="manage-button">Gestionar</button>
+          </div>
+          <button class="add-payment-method">Añadir método de pago</button>
+        </div>
+      </div>
+      <!-- Sección de tarjetas guardadas  -->
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tarjetas guardadas</h2>
+          <p class="section-description">Gestiona tus tarjetas guardadas</p>
+        </div>
+        <div class="card-list">
+          <div class="card">
+            <div class="card-details">
+              <h3 class="card-title">Tarjeta 1</h3>
+              <p class="card-date">Guardada el 01/01/2024</p>
+            </div>
+            <a href="#" class="view-details">Ver detalles</a>
+          </div>
+          <div class="card">
+            <div class="card-details">
+              <h3 class="card-title">Tarjeta 2</h3>
+              <p class="card-date">Guardada el 01/01/2024</p>
+            </div>
+            <a href="#" class="view-details">Ver detalles</a>
+          </div>
+        </div>
+        <button class="add-card-button">Añadir nueva tarjeta</button>
+      </div>
+</main>
+</body>
 </html>
