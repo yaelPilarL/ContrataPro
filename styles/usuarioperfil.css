@@ -3,15 +3,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  
 }
-
+main{
+  background-color: white;
+}
 .menu{
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.644);
+  background-color: white;
 }
 /* Logo y animación */
 .logo-container {
@@ -183,8 +186,8 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
   padding: 40px 20px;
+
 }
 
 /* Estilos para la sección de perfil */
@@ -192,6 +195,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  
 }
 
 .profile-image-container {
@@ -209,6 +213,7 @@ body {
   margin: 0;
   font-size: 20px;
   font-weight: bold;
+
 }
 
 .profile-info .membership-type {
@@ -223,6 +228,7 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 /* Estilos para la sección de información personal */
@@ -231,6 +237,9 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  background-color: #6666662f;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 .personal-info-item {
@@ -325,6 +334,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  background-color: #6666662f;
+  border-radius: 15px;
+  border: 1px solid black;
+  
 }
 
 .card {
@@ -363,4 +376,37 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
+}
+/*botones*/
+.binfo1 {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  text-align: center;
+}
+
+.binfo1:hover {
+  background-color: #154162;
+  box-shadow: 0px 15px 20px rgba(4, 97, 219, 0.521);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.binfo1:active {
+  transform: translateY(-1px);
+}
+.account-data-section{
+  background-color: #6666662f;
+  border-radius: 15px;
+  border: 1px solid black;
 }
