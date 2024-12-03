@@ -184,9 +184,10 @@ select {
 
 .worker-card {
   display: flex;
+  border: 1px solid gray;
   align-items: center;
   padding: 15px;
-  background-color: #fff;
+  background-color: #c5c5c546;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
@@ -310,11 +311,7 @@ select {
   font-size: small;
 }
 
-<<<<<<< HEAD
-.binfo .bcontrata{
-=======
 /* .binfo .bcontrata {
->>>>>>> 9754c4fa0b7c2d4ba29cc0319e484935e94852d2
   padding: 1.3em 3em;
   font-size: 12px;
   font-weight: 500;
@@ -386,4 +383,17 @@ select {
 
 .bcontrata:active {
   transform: translateY(-1px);
+}
+/*MEJORAS VISUALES*/
+.h2titulo{
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+}
+.precio{
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #FFE45E;
+  border: 1px solid black;
 }
