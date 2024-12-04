@@ -1,0 +1,170 @@
+
+.contain {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 90px;
+    padding-bottom: 70px;
+}
+
+.payment-form {
+    background: #d3e6f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 2;
+}
+
+.summary-panel {
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.confirm-btn {
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.confirm-btn:hover {
+    background: #45a049;
+}
+
+.amounts {
+    background: #ffebee;
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    background-color: #fa85a8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.amount-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+}
+
+.payment-options {
+    margin-bottom: 30px;
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    
+}
+
+.payment-options h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    
+}
+
+.cancel-btn,
+.later-btn,
+.summary-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel-btn {
+    background: #DD2D4A;
+    color: white;
+}
+
+.later-btn {
+    background: #7199B7;
+    color: white;
+}
+
+.summary-btn {
+    background: #FF6392;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #bd253e;
+}
+
+.later-btn:hover {
+    background:#5786aa;
+}
+
+.summary-btn:hover {
+    background:#e0557f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

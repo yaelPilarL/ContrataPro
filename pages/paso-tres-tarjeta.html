@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso Tres</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/usuarioperfil.css">
+    <link rel="stylesheet" href="../styles/paso_uno_tarjeta.css">
+    <link rel="stylesheet" href="../styles/paso-tres-tarjeta.css">
+    <script src="../scripts/favicon.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo-container">
+                <!-- Aquí está la animación del logo -->
+                <a href="./Paginaprincipalusuario.html"><!--  -->
+                <div class="button-container">
+                    <button class="home-button">Home</button>
+                    <div class="logo-split">
+                        <img src="../assets/Logo sin fondo izquierda - copia.png" alt="Tuerca" class="logo-part logo-left">
+                        <img src="../assets/Logo sin fondo - derecha - copia.png" alt="Foco" class="logo-part logo-right">
+                    </div>
+                </a>
+                </div>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <a href="./usuario-solicitudes.html">
+                        <span class="box">
+                            Mis solicitudes
+                        </span>
+                    </a>
+                    <a href="./usuario-favoritos.html"><span class="box">
+                    Favoritos
+                    </span></a>
+                    <a href="./usuarioperfil.html"><span class="box">
+                    Perfil
+                    </span></a>
+                    <i class="fa-solid fa-bell"id="icon" style="font-size: 30px; color: black; cursor: pointer; padding-top: 10px; padding: 10px;"></i>
+                <script>
+                const icon = document.getElementById('icon');
+                
+                icon.addEventListener('click', function() {
+                    // Si el color es negro, lo cambia a rojo, y viceversa.
+                    if (icon.style.color === 'black') {
+                    icon.style.color = 'yellow';
+                    } else {
+                    icon.style.color = 'black';
+                    }
+                });
+                </script>
+                </nav>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="infoperfil">
+            <img src="../assets/icons8-administrator-male-80.png" alt="" srcset="">
+            <h4>Nombre de Usuario</h4>
+        </div>
+            <a href="./usuarioperfil.html"><img class="flecha" src="../assets/icons8-left-arrow-100 (1).png" alt="" srcset=""></a>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <div class="menu-icon">
+                        <span>&#9776;</span>
+                    </div>
+                    <input type="text" placeholder="Buscar servicios" />
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            
+                    <h2 class="leyenda">¡Cada vez estás más cerca!</h2>
+                    
+                    <div class="steps">
+                        <div class="step"><h2>1</h2><h3>Crea tu solicitud</h3></div>
+                        <div class="step"><h2>2</h2><h3>Reserva tu cita</h3></div>
+                        <div class="step active"><h2>3</h2><h3>Señala tu solicitud</h3></div>
+                    </div>
+                    <div class="contain">
+                        <div class="payment-form">
+                            <h2>Abonar seña</h2>
+                            <div class="form-group">
+                                <label>Importe: $</label>
+                                <input type="number" placeholder="0.00">
+                            </div>
+                            
+                            <div class="card-details">
+                                <div class="form-group">
+                                    <label>Numero de tarjeta</label>
+                                    <input type="text" placeholder="0000 0000 0000 0000">
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Fecha de vencimiento</label>
+                                        <input type="text" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Código de seguridad</label>
+                                        <input type="text" placeholder="000">
+                                    </div>
+                                </div>
+                
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="save-card">
+                                    <label for="save-card">Guardar datos de tarjeta</label>
+                                </div>
+                            </div>
+                
+                            <div class="personal-info">
+                                <div class="form-group">
+                                    <label>Nombre y apellido de la persona titular</label>
+                                    <input type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label>D.N.I de la persona titular</label>
+                                    <input type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label>Correo electrónico</label>
+                                    <input type="email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirmar correo electrónico</label>
+                                    <input type="email">
+                                </div>
+                            </div>
+                
+                            <button class="confirm-btn">Confirmar Pago</button>
+                        </div>
+                
+                        <div class="summary-panel">
+                            <div class="amounts">
+                                <div class="amount-row">
+                                    <span>TOTAL:</span>
+                                    <span>$</span>
+                                </div>
+                                <div class="amount-row">
+                                    <span>SEÑA:</span>
+                                    <span>$</span>
+                                </div>
+                                <div class="amount-row">
+                                    <span>SALDO:</span>
+                                    <span>$</span>
+                                </div>
+                            </div>
+                
+                            <div class="payment-options">
+                                <h3>¿Cómo deseas abonar la seña?</h3>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="efectivo">
+                                    <label for="efectivo">Efectivo</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="transferencia">
+                                    <label for="transferencia">Transferencia</label>
+                                </div>
+                                <script src="../scripts/radiobuttons.js"></script>
+                            </div>
+                
+                            <button class="cancel-btn">CANCELAR</button>
+                            <button class="later-btn">Finalizar solicitud más tarde</button>
+                            <button class="summary-btn">Resumen de mi solicitud</button>
+                        </div>
+                    </div>
+            
+    </main>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="link">
+                    <h4>ContrataPro</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="#">Impacto</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Contratación</a></li>
+                        <li><a href="#">Postulación</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-phone"></i> Centro de Ayuda</li></a>
+                        <li> <a href="https://www.google.com/maps?sca_esv=7e370cf0159e2ba3&rlz=1C1GCEA_enAR1020AR1020&output=search&q=educaci%C3%B3n+it&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgy3z6G8XHXm5Ah4uwilWjRO_f3ZpYjYhoafm-990aqxO1yt63WPyebJ_atHlAVvBaCQ5oSyUPfEV7Dp4HqoGVMs_t91WZYaM0bKrmjb709nxzedLeXiGya2ULkHhmDCrL1hUaGzpzkBm3TTtP6Jov3xrhMKF6Fu3Y9OsLEW-rmTgv6jw7NHHFmcDGgkiHScmBdkXTVw&entry=mc&ved=1t:200715&ictx=111" target="_blank"><i class="fas fa-map-marker-alt"></i> Lavalle 684, Ciudad de Buenos Aires, Argentina</li></a>
+                        <li><a href="#"><i class="fas fa-envelope"></i> ejemplo@email.com</li></a>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h4>Redes Sociales</h4>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Derechos de autor --> 
+    <div class="politicas">
+        <p>©2024 Todos los derechos reservados</p>
+    </div>
+</body>
+</html>
