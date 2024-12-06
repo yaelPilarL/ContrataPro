@@ -207,6 +207,7 @@ body {
     text-transform: uppercase;
     box-shadow: 0 2px 4px rgba(255, 64, 129, 0.2);
     margin-left: 20px;
+    text-decoration: none;
 }
 
 .reserve-btn:hover {
