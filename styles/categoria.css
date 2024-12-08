@@ -7,18 +7,24 @@
 }
 .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
-}
-/* Logo y animación */
-.logo-container {
-  padding-top: 10px;
-  position: relative;
-  display: flex;
-  align-items: center;
+  padding: 10px;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
 .button-container {
   position: relative;
 }
@@ -397,3 +403,70 @@ select {
   background-color: #FFE45E;
   border: 1px solid black;
 }
+@media (max-width: 760px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .worker-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .worker-card img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .worker-info {
+    margin-bottom: 15px;
+  }
+
+  .worker-price {
+    text-align: center;
+    width: 100%;
+  }
+
+  .worker-price .precio {
+    margin-bottom: 15px;
+  }
+
+  .worker-price .binfo,
+  .worker-price .bcontrata {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .link {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+
+/* Fine-tuning for very small screens */
+@media (max-width: 480px) {
+  .h2titulo {
+    font-size: 24px;
+  }
+
+  .logo-container {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .worker-card {
+    padding: 10px;
+  } } }
