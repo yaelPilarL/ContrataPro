@@ -1,4 +1,10 @@
+.buscador{
+    margin: 9px;
+}
 
+.buscador label{
+    border: none;
+}
 .contain {
     display: flex;
     gap: 20px;

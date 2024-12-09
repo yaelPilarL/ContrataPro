@@ -11,17 +11,11 @@
     --time-slot-active: #fff8f9;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: white;
 }
 
 .contain {
@@ -219,6 +213,10 @@ body {
 .reserve-btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(255, 64, 129, 0.2);
+}
+
+.buscador{
+    margin: 9px;
 }
 
 /* Responsive Design */
