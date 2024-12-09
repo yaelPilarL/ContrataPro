@@ -85,7 +85,7 @@
                         <section class="address-section">
                             <h2>Solicitud para el domicilio:</h2>
                             <div class="address-input">
-                                <input type="text" placeholder="Dirección, numeración, piso, dpto, localidad, provincia">
+                                <input type="text" id="address-input" placeholder="Dirección, numeración, piso, dpto, localidad, provincia">
                                 <div class="save-address">
                                     <input type="checkbox" id="save-address">
                                     <label for="save-address">Guardar dirección</label>
@@ -98,6 +98,7 @@
                 
                         <section class="appointment-section">
                             <h2>¡Agenda tu cita!</h2>
+                            
                             <div class="calendar-container">
                                 <div class="calendar">
                                     <div class="calendar-header">
@@ -117,6 +118,7 @@
                                             <option value="11">Diciembre</option>
                                         </select>
                                     </div>
+                                    
                                     <div class="weekdays">
                                         <span>D</span>
                                         <span>L</span>
@@ -128,38 +130,39 @@
                                     </div>
                                     <div class="days"></div>
                                 </div>
-                            </div>
-                            <div class="time-slots">
-                                <div class="slot-header">
-                                    <span>DD/MM/AA</span>
-                                    <span>Lugar</span>
-                                </div>
-                                <div class="slots">
-                                    <div class="time-slot">
-                                        <span>07:00hs</span>
-                                        <span>Dirección del domicilio colocado</span>
-                                        <a href="./paso-tres-tarjeta.html" class="reserve-btn">RESERVAR</a>
+                
+                                <div class="time-slots">
+                                    <div class="slot-header">
+                                        <span id="selected-date">DD/MM/AA</span>
+                                        <span>Lugar: <span class="address-display">Dirección</span></span>
                                     </div>
-                                    <div class="time-slot">
-                                        <span>09:00hs</span>
-                                        <span>Dirección del domicilio colocado</span>
-                                        <a href="./paso-tres-tarjeta.html" class="reserve-btn">RESERVAR</a>
+                                    <div class="slots">
+                                        <div class="time-slot">
+                                            <span>07:00hs</span>
+                                            <span class="address-display">Dirección del domicilio colocado</span>
+                                            <button class="reserve-btn">RESERVAR</button>
+                                        </div>
+                                        <div class="time-slot">
+                                            <span>09:00hs</span>
+                                            <span class="address-display">Dirección del domicilio colocado</span>
+                                            <button class="reserve-btn">RESERVAR</button>
+                                        </div>
+                                        <div class="time-slot">
+                                            <span>12:00hs</span>
+                                            <span class="address-display">Dirección del domicilio colocado</span>
+                                            <button class="reserve-btn">RESERVAR</button>
+                                        </div>
+                                        <div class="time-slot">
+                                            <span>15:00hs</span>
+                                            <span class="address-display">Dirección del domicilio colocado</span>
+                                            <button class="reserve-btn">RESERVAR</button>
+                                        </div>
                                     </div>
-                                    <div class="time-slot">
-                                        <span>12:00hs</span>
-                                        <span>Dirección del domicilio colocado</span>
-                                        <a href="./paso-tres-tarjeta.html" class="reserve-btn">RESERVAR</a>
-                                    </div>
-                                    <div class="time-slot">
-                                        <span>15:00hs</span>
-                                        <span>Dirección del domicilio colocado</span>
-                                        <a href="./paso-tres-tarjeta.html" class="reserve-btn">RESERVAR</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                    </section>
-            <script src="../scripts/calendar.js"></script>
+                                </div>  
+                            </div>  
+                        </section>
+                <script src="../scripts/calendar.js"></script>
+                <script src="../scripts/ubicacionDinamica.js"></script>
     </main>
     
 

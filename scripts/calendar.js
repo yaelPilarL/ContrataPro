@@ -1,6 +1,7 @@
 const yearSelect = document.getElementById('year-select');
 const monthSelect = document.getElementById('month-select');
 const daysContainer = document.querySelector('.days');
+const selectedDateDisplay = document.getElementById('selected-date');
 
 // Poblar los años dinámicamente (solo el año actual y los próximos 2 años)
 const currentYear = new Date().getFullYear();
@@ -30,7 +31,22 @@ function generateCalendar() {
     for (let day = 1; day <= daysInMonth; day++) {
         const button = document.createElement('button');
         button.textContent = day;
+
+        // Agregar un evento de clic para cada botón de día
+        button.addEventListener('click', () => {
+            const selectedMonth = monthSelect.options[monthSelect.selectedIndex].text;
+            const formattedDate = `${day < 10 ? '0' + day : day}/${selectedMonth}/${year}`;
+            
+            // Actualizar la fecha en el slot-header
+            selectedDateDisplay.textContent = formattedDate;
+        });
+
         daysContainer.appendChild(button);
+    }
+
+    // Si no se ha seleccionado ningún día, mostrar DD/MM/AAAA
+    if (selectedDateDisplay.textContent === '') {
+        selectedDateDisplay.textContent = 'DD/MM/AAAA';
     }
 }
 
