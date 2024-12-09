@@ -1,6 +1,7 @@
 body{
     background-color: white;
 }
+
 /* ICONO DEL CARRITO */
 .icons {
     padding: 1em;
@@ -8,7 +9,7 @@ body{
     color: #333;
 }
 .icon {
-    width: 20px; /* Ajusta el tamaño según lo necesites */
+    width: 20px; 
     height: 20px;
 }
 .icons i {
@@ -84,10 +85,12 @@ div .search-container {
 
 .steps {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 1px;
-    gap: 40px;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;    /* Centrar verticalmente (si es necesario) */
+    gap: 40px;              /* Espaciado entre los pasos */
+    margin-top: 20px;       /* Separación superior */
+    margin-bottom: 50px;    /* Separación inferior */
+    
 }
 
 .step {
@@ -133,7 +136,7 @@ div .search-container {
     margin-bottom: 100px;
     margin-left: 200px;
     margin-right: 200px;
-}
+} 
 
 .request h2 {
     color: black;
@@ -144,7 +147,7 @@ div .search-container {
 
 .request p {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .btn-view {
