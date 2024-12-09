@@ -166,6 +166,16 @@ input[type="number"] {
     background:#e0557f;
 }
 
+.cancel-btn a,
+.summary-btn a {
+    text-decoration: none; 
+    color: inherit;        
+    width: 100%;            
+    height: 100%;           
+    display: flex;          
+    justify-content: center;
+    align-items: center;    
+}
 
 @media (max-width: 760px) {
     .contain {

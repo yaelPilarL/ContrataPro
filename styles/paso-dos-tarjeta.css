@@ -293,8 +293,58 @@ option {
     box-shadow: 0 2px 4px rgba(255, 64, 129, 0.2);
 }
 
+.button-container {
+    margin-top: 50px;
+    display: flex;          
+    justify-content: space-between;  
+    gap: 10px;                
+}
 
-@media (max-width: 768px) {
+.before-btn,
+.after-btn {
+    width: 48%;               
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;            
+    justify-content: center; 
+    align-items: center;     
+}
+
+.before-btn {
+    background: #3977a7;
+    color: white;
+}
+
+.before-btn:hover {
+    background: #1f5b8a;
+}
+
+.after-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.after-btn:hover {
+    background: #45a049;
+}
+
+.before-btn a,
+.after-btn a {
+    text-decoration: none; 
+    color: inherit;        
+    width: 100%;            
+    height: 100%;           
+    display: flex;          
+    justify-content: center;
+    align-items: center;    
+}
+
+
+
+@media (max-width: 760px) {
     .contain {
         padding: 1rem;
         margin: 1rem auto;
@@ -346,6 +396,17 @@ option {
     
     .slot-header {
         display: none;
+    }
+
+    .button-container {
+        flex-direction: column; 
+        align-items: stretch;   
+    }
+
+    .cancel-btn,
+    .confirm-btn {
+        width: 100%;            
+        margin-bottom: 10px;    
     }
 }
 
