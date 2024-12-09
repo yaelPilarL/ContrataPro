@@ -2,7 +2,10 @@ const yearSelect = document.getElementById('year-select');
 const monthSelect = document.getElementById('month-select');
 const daysContainer = document.querySelector('.days');
 const selectedDateDisplay = document.getElementById('selected-date');
-const slotsContainer = document.querySelector('.slots'); // Contenedor de los slots
+const slotsContainer = document.querySelector('.slots');
+
+// Variable para almacenar el horario previamente seleccionado
+let previouslySelectedTimeSlot = null;
 
 // Poblar los años dinámicamente (solo el año actual y los próximos 2 años)
 const currentYear = new Date().getFullYear();
@@ -58,3 +61,23 @@ monthSelect.addEventListener('change', generateCalendar);
 
 // Generar calendario inicial
 generateCalendar();
+
+// Evento para cambiar color de fondo cuando se presiona el botón RESERVAR
+const reserveButtons = document.querySelectorAll('.reserve-btn');
+
+reserveButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        // Revertir el color de fondo del contenedor previamente seleccionado
+        if (previouslySelectedTimeSlot) {
+            previouslySelectedTimeSlot.style.backgroundColor = ''; // Restaurar el color original
+        }
+
+        // Cambiar el color de fondo del contenedor .time-slot
+        const timeSlot = event.target.closest('.time-slot');
+        timeSlot.style.backgroundColor = 'rgba(136, 186, 214, 0.5)'; // Cambia el color 
+
+
+        // Actualizar la variable de seguimiento para el nuevo horario seleccionado
+        previouslySelectedTimeSlot = timeSlot;
+    });
+});
