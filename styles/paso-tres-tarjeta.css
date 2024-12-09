@@ -86,9 +86,9 @@ input[type="number"] {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
-    text-decoration: none; /* Quitar subrayado */
-    display: inline-block; /* Hace que el enlace se comporte como un botón */
-    text-align: center; /* Centra el texto */
+    text-decoration: none; 
+    display: inline-block; 
+    text-align: center; 
 }
 
 .confirm-btn:hover {
@@ -166,13 +166,91 @@ input[type="number"] {
     background:#e0557f;
 }
 
-@media (max-width: 768px) {
-    .container {
+
+@media (max-width: 760px) {
+    .contain {
         flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+        align-items: center;
     }
-    
+
+    .payment-form, .summary-panel {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        font-size: 14px;
+    }
+
     .form-row {
         flex-direction: column;
-        gap: 0;
+        gap: 10px;
+    }
+
+    .confirm-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .amounts, .payment-options {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .amount-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .cancel-btn, .later-btn, .summary-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contain {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .confirm-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .amount-row {
+        font-size: 12px;
+    }
+
+    .cancel-btn, .later-btn, .summary-btn {
+        font-size: 12px;
+        padding: 8px;
     }
 }

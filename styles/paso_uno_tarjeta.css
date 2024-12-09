@@ -198,3 +198,103 @@ div .search-container {
     font-size: 1.1em;
     line-height: 1.5; 
 }
+@media (max-width: 768px) {
+    
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .icons {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .search-bar-container {
+        margin-top: 5%;
+    }
+
+    div .search-container {
+        width: 90%;
+    }
+
+    .buscador {
+        width: 100%;
+        padding: 5px 15px;
+    }
+
+    .buscador input {
+        font-size: 14px;
+        margin: 0 5%;
+    }
+
+    .leyenda {
+        margin: 2em 1em;
+        text-align: center;
+    }
+
+    .steps {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+        margin: 10px; 
+    }
+
+    .step {
+        flex: 1 1 30%; 
+        max-width: 80px; 
+        text-align: center; 
+    }
+
+    .step h2 {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8em; 
+        margin-left: 0; 
+    }
+
+    .step h3 {
+        font-size: 0.9em; 
+    }
+
+    .request {
+        margin: 1em;
+        padding: 15px;
+        padding-bottom: 50px;
+    }
+
+    .request h2 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .request p {
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    .btn-view {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .pricing input {
+        width: 100%; 
+        margin-left: 0;
+    }
+
+    .costs {
+        float: none; 
+        margin: 20px auto;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .costs p {
+        font-size: 1em;
+    }
+}

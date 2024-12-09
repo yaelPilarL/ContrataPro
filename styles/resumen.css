@@ -99,3 +99,79 @@ h2 {
 .btn-submit:hover{
     background-color: #0aaa15;
 }
+
+
+@media (max-width: 760px) {
+    .buscador {
+        margin: 5px;
+    }
+
+    .solicitud-container {
+        margin: 20px auto;
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        margin-bottom: 15px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .flex input {
+        width: 100%;
+    }
+
+    .prof {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .cont-prof, .cont-acc {
+        padding: 10px;
+        border-width: 4px;
+    }
+
+    .btn-edit, .btn-submit {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .solicitud-container {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .section span {
+        font-size: 0.95rem;
+    }
+
+    .highlight {
+        font-size: 0.85em;
+    }
+}

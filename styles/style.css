@@ -89,3 +89,42 @@
     padding: 15px 5px;
     font-size: small;
 }
+
+@media (max-width: 760px) {
+    .footer-row {
+        flex-direction: column; 
+        align-items: center;   
+        text-align: center;    
+    }
+
+    .link {
+        width: 100%;           
+        margin-bottom: 20px;   
+        padding: 0;            
+    }
+
+    .link h4 {
+        font-size: 1rem;       
+        margin-bottom: 10px;   
+    }
+
+    .link ul li a {
+        font-size: 0.9rem;     
+        margin-bottom: 10px;   
+    }
+
+    .redes {
+        margin-top: 20px;      
+    }
+
+    .redes a {
+        min-width: 30px;       
+        line-height: 30px;
+        margin: 0 5px;         
+    }
+
+    .politicas {
+        font-size: 0.8rem;     
+        padding: 10px 5px;     
+    }
+}
