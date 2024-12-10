@@ -21,7 +21,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: white;
 }
 
 .contain {
@@ -293,7 +293,7 @@ option {
     box-shadow: 0 2px 4px rgba(255, 64, 129, 0.2);
 }
 
-.button-container {
+.button-continuar {
     margin-top: 50px;
     display: flex;          
     justify-content: space-between;  
