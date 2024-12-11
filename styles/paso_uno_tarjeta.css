@@ -85,11 +85,11 @@ div .search-container {
 
 .steps {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center;    /* Centrar verticalmente (si es necesario) */
-    gap: 40px;              /* Espaciado entre los pasos */
-    margin-top: 20px;       /* Separación superior */
-    margin-bottom: 50px;    /* Separación inferior */
+    justify-content: center; 
+    align-items: center;    
+    gap: 40px;              
+    margin-top: 20px;       
+    margin-bottom: 50px;   
 }
 
 .step {

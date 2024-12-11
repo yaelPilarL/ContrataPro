@@ -10,13 +10,13 @@
     gap: 20px;
     max-width: 1200px;
     width: 100%;
-    display: flex;
     align-items: stretch;
     justify-content: center;
     padding: 20px;
-    margin-left: 90px;
+    margin: 0 auto; 
     padding-bottom: 70px;
 }
+
 
 .payment-form {
     background: #d3e6f0;
