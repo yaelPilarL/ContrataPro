@@ -230,7 +230,113 @@ section button {
     font-weight: bold;
     font-size: medium;
 }
+@media (max-width: 768px) {
+    /* Ajustar contenedor del buscador */
+    .search-container {
+        width: 90%;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
 
+    .buscador {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 8px 16px;
+    }
+
+    .buscador input {
+        font-size: 14px;
+        margin: 0 5%;
+    }
+
+    .buscador button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Ajustar encabezados y textos */
+    .h2 {
+        font-size: 28px;
+        margin-top: 1.5rem;
+    }
+
+    #pcat {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+
+    .h4func {
+        font-size: 18px;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    /* Categorías: tarjetas responsivas */
+    #categorias {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+        padding: 0 1rem;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .card img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .h4c {
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+
+    /* Ajustes para el slider */
+    .slider-wraper, .slider-wraper-prof {
+        width: 100%;
+        overflow: hidden;
+        padding: 0 1rem;
+    }
+
+    .slider div, .sliderprof div {
+        text-align: center;
+    }
+
+    .slider img, .sliderprof img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .pasos {
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+
+    /* Footer ajustes */
+    .footer .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .footer .link {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer .redes {
+        justify-content: center;
+    }
+}
 
 
 

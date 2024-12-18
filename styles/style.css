@@ -128,3 +128,89 @@
         padding: 10px 5px;     
     }
 }
+@media screen and (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .link ul li a {
+        font-size: 0.9rem;
+    }
+
+    .redes a {
+        margin: 0 5px;
+        line-height: 30px;
+        min-width: 30px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .header-content {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .search-container {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .search-container input {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .search-container button {
+        padding: 10px;
+    }
+
+    #categorias {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .carruseluser, .carruselprof {
+        padding: 0 10px;
+    }
+
+    .slider-wraper, .slider-wraper-prof {
+        overflow: hidden;
+    }
+
+    .slider div, .sliderprof div {
+        text-align: center;
+    }
+}
